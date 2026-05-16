@@ -1,0 +1,357 @@
+/* Global Reset and Theme Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b132b; /* Dominant Deep Blue Background */
+    color: #e2e8f0;            /* Light text for contrast */
+    line-height: 1.6;
+    padding-top: 70px; 
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #1c2541; /* Slightly lighter dark blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo .dot {
+    color: #ffd166; /* Accent Yellow */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd166; /* Accent Yellow on hover */
+}
+
+/* Core Sections Layout */
+.section {
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    position: relative;
+    color: #ffffff;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #7209b7; /* Accent Purple Line */
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 70px);
+    padding: 0 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.welcome-tag {
+    background-color: #7209b7; /* Purple Badge */
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin: 15px 0;
+}
+
+.sub-title {
+    font-size: 22px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #ffd166; /* Yellow Accent for Cybersecurity */
+}
+
+.description {
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #7209b7; /* Accent Purple Button */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #560bad;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #1c2541;
+    color: #e2e8f0;
+    border: 1px solid #3a506b;
+}
+
+.btn-secondary:hover {
+    background-color: #3a506b;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-avatar {
+    width: 280px;
+    height: 280px;
+    object-fit: cover; /* Keeps image proportions correct */
+    border: 6px solid #7209b7; /* Purple Frame */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+/* Cards & Content Blocks */
+.card, .education-card {
+    background: #1c2541; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid #3a506b;
+    margin-bottom: 20px;
+}
+
+.edu-meta {
+    color: #ffd166; /* Yellow Accent for meta text */
+    margin: 5px 0 15px 0;
+}
+
+/* Skills Container */
+.skills-container {
+    background: #1c2541;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid #3a506b;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    width: 220px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 12px;
+    background-color: #0b132b; 
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* Bar Coloring (Alternating Purple and Yellow accents) */
+.progress.java { background-color: #7209b7; } /* Purple */
+.progress.web  { background-color: #ffd166; } /* Yellow */
+.progress.js   { background-color: #7209b7; } /* Purple */
+.progress.ps   { background-color: #ffd166; } /* Yellow for Photoshop */
+
+.skill-percent {
+    width: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+/* Projects Grid */
+.sub-heading {
+    margin: 40px 0 20px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.project-box {
+    flex: 1;
+    background: #1c2541;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #3a506b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.project-box h4 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.project-box p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tech-tag {
+    background-color: #0b132b;
+    color: #ffd166; 
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Contact Block */
+.contact-container {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-form {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    background-color: #0b132b;
+    border: 1px solid #3a506b;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ffd166; /* Changes to yellow when typing */
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #0a0f1d;
+    color: #64748b;
+    font-size: 14px;
+    border-top: 1px solid #1c2541;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section, .contact-container, .projects-grid {
+        flex-direction: column;
+    }
+    .hero-image {
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .skill-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .progress-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

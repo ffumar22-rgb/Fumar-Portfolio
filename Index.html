@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Fumar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Frank<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="welcome-tag">Welcome to my portfolio</span>
+            <h1>Hi, I'm Frank Benjamin Fumar</h1>
+            <p class="sub-title">An Aspiring <strong class="highlight">Cybersecurity Specialist</strong></p>
+            <p class="description">A BSIT student exploring the world of network defense, web security, and system optimization.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#skills" class="btn btn-secondary">View Skills</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Frank Benjamin Fumar" class="profile-avatar">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>I am a passionate Bachelor of Science in Information Technology (BSIT) student at Agusan del Sur State University (ADSSU). My core focus lies in system security, computer hardware optimization, and front-end development.</p>
+            <p>I enjoy building reliable web interfaces, resolving resource management bugs, and setting up clean local environments to study system configurations.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-row">
+                <span class="skill-name">Java Programming</span>
+                <div class="progress-bar"><div class="progress java" style="width: 70%;"></div></div>
+                <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-name">HTML5 / CSS3</span>
+                <div class="progress-bar"><div class="progress web" style="width: 80%;"></div></div>
+                <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-name">JavaScript (DOM)</span>
+                <div class="progress-bar"><div class="progress js" style="width: 65%;"></div></div>
+                <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-name">Photoshop (Beginner)</span>
+                <div class="progress-bar"><div class="progress ps" style="width: 50%;"></div></div>
+                <span class="skill-percent">50%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education & Projects</h2>
+        <div class="education-card">
+            <h3>Agusan del Sur State University (ADSSU)</h3>
+            <p class="edu-meta">Bachelor of Science in Information Technology | <em>Currently Studying</em></p>
+            <p>Building foundational knowledge in programming, database systems, web architectural styles, and networking frameworks.</p>
+        </div>
+
+        <h3 class="sub-heading">Completed Milestones</h3>
+        <div class="projects-grid">
+            <div class="project-box">
+                <h4>Daily Sales Report System</h4>
+                <p>A desktop Java application incorporating custom arrays, methods, and UI components.</p>
+                <span class="tech-tag">Java</span>
+            </div>
+            <div class="project-box">
+                <h4>Interactive Announcement Board</h4>
+                <p>A web tool implementing clean DOM selectors to instantly display client-side notifications.</p>
+                <span class="tech-tag">HTML / JS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> ffumar22@adssu.edu.ph</p>
+                <p><strong>GitHub:</strong> github.com/ffumar22-rgb</p>
+                <p><strong>Location:</strong> Agusan del Sur, Philippines</p>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea placeholder="Type your message here..." rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Frank Benjamin Fumar | Built with HTML, CSS, and JavaScript</p>
+    </footer>
+
+</body>
+</html>
