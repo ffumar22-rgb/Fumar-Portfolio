@@ -12,19 +12,19 @@ html {
 
 body {
     background-color: #0b132b; /* Dominant Deep Blue Background */
-    color: #e2e8f0;            /* Light text for contrast */
+    color: #e2e8f0;            /* Light slate text for comfortable reading */
     line-height: 1.6;
-    padding-top: 70px; 
+    padding-top: 70px;         /* Prevents navbar from blocking sections */
 }
 
-/* Navbar */
+/* Fixed Navigation Layout */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: #1c2541; /* Slightly lighter dark blue */
+    background-color: #1c2541; /* Lighter container dark blue */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ nav {
 }
 
 .logo .dot {
-    color: #ffd166; /* Accent Yellow */
+    color: #ffd166; /* Accent Yellow Node */
 }
 
 .nav-links {
@@ -60,10 +60,10 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #ffd166; /* Accent Yellow on hover */
+    color: #ffd166; /* Changes to accent color on hover */
 }
 
-/* Core Sections Layout */
+/* Core Content Structure Containers */
 .section {
     padding: 80px 10%;
     max-width: 1200px;
@@ -80,14 +80,14 @@ h2 {
 h2::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 60px;
     height: 4px;
-    background-color: #7209b7; /* Accent Purple Line */
+    background-color: #7209b7; /* Subtle Deep Purple accent bar */
     margin-top: 8px;
     border-radius: 2px;
 }
 
-/* Hero Section */
+/* Hero Landing Section */
 .hero-section {
     display: flex;
     align-items: center;
@@ -104,18 +104,20 @@ h2::after {
 }
 
 .welcome-tag {
-    background-color: #7209b7; /* Purple Badge */
+    background-color: #7209b7; /* Deep Purple branding card */
     color: #ffffff;
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 46px;
     color: #ffffff;
-    margin: 15px 0;
+    margin: 20px 0 10px 0;
 }
 
 .sub-title {
@@ -125,16 +127,16 @@ h2::after {
 }
 
 .highlight {
-    color: #ffd166; /* Yellow Accent for Cybersecurity */
+    color: #ffd166; /* Accent Yellow Highlights */
 }
 
 .description {
     color: #94a3b8;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 16px;
 }
 
-/* Buttons */
+/* Buttons Engine */
 .hero-buttons {
     display: flex;
     gap: 15px;
@@ -145,14 +147,14 @@ h2::after {
     padding: 12px 28px;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: transform 0.2s, background-color 0.3s;
     cursor: pointer;
 }
 
 .btn-primary {
-    background-color: #7209b7; /* Accent Purple Button */
-    color: white;
+    background-color: #7209b7;
+    color: #ffffff;
     border: none;
 }
 
@@ -162,16 +164,17 @@ h2::after {
 }
 
 .btn-secondary {
-    background-color: #1c2541;
-    color: #e2e8f0;
-    border: 1px solid #3a506b;
+    background-color: #ffd166;
+    color: #0b132b;
+    border: none;
 }
 
 .btn-secondary:hover {
-    background-color: #3a506b;
+    background-color: #ffb703;
     transform: translateY(-2px);
 }
 
+/* Circular Avatar Frame */
 .hero-image {
     flex: 1;
     display: flex;
@@ -179,46 +182,51 @@ h2::after {
 }
 
 .profile-avatar {
-    width: 280px;
-    height: 280px;
-    object-fit: cover; /* Keeps image proportions correct */
-    border: 6px solid #7209b7; /* Purple Frame */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    border: 6px solid #1c2541;
+    outline: 3px solid #7209b7; /* Structured outer halo line */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     border-radius: 50%;
 }
 
-/* Cards & Content Blocks */
+/* Inner Block Display Cards */
 .card, .education-card {
-    background: #1c2541; 
+    background-color: #1c2541;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     border: 1px solid #3a506b;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .edu-meta {
-    color: #ffd166; /* Yellow Accent for meta text */
+    color: #ffd166;
+    font-weight: 600;
     margin: 5px 0 15px 0;
 }
 
-/* Skills Container */
+/* Metrics Skill Layout */
 .skills-container {
-    background: #1c2541;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background-color: #1c2541;
+    padding: 35px;
+    border-radius: 10px;
     border: 1px solid #3a506b;
 }
 
 .skill-row {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.skill-row:last-child {
+    margin-bottom: 0;
 }
 
 .skill-name {
-    width: 220px;
+    width: 240px;
     font-weight: 600;
     color: #e2e8f0;
 }
@@ -226,10 +234,11 @@ h2::after {
 .progress-bar {
     flex: 1;
     height: 12px;
-    background-color: #0b132b; 
+    background-color: #0b132b;
     border-radius: 6px;
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 25px;
+    border: 1px solid #3a506b;
 }
 
 .progress {
@@ -237,22 +246,19 @@ h2::after {
     border-radius: 6px;
 }
 
-/* Bar Coloring (Alternating Purple and Yellow accents) */
-.progress.java { background-color: #7209b7; } /* Purple */
-.progress.web  { background-color: #ffd166; } /* Yellow */
-.progress.js   { background-color: #7209b7; } /* Purple */
-.progress.ps   { background-color: #ffd166; } /* Yellow for Photoshop */
+.progress.track-a { background-color: #7209b7; }
+.progress.track-b { background-color: #ffd166; }
 
 .skill-percent {
-    width: 40px;
+    width: 45px;
     text-align: right;
     font-weight: 600;
     color: #94a3b8;
 }
 
-/* Projects Grid */
+/* Grid presentation boxes */
 .sub-heading {
-    margin: 40px 0 20px 0;
+    margin: 45px 0 20px 0;
     font-size: 22px;
     color: #ffffff;
 }
@@ -264,34 +270,44 @@ h2::after {
 
 .project-box {
     flex: 1;
-    background: #1c2541;
+    background-color: #1c2541;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid #3a506b;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-box h4 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #ffffff;
+    font-size: 18px;
 }
 
 .project-box p {
     color: #94a3b8;
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.tag-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .tech-tag {
     background-color: #0b132b;
     color: #ffd166; 
-    padding: 4px 10px;
+    padding: 4px 12px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
+    border: 1px solid #3a506b;
 }
 
-/* Contact Block */
+/* Contact Interfacing Form blocks */
 .contact-container {
     display: flex;
     gap: 40px;
@@ -302,8 +318,9 @@ h2::after {
 }
 
 .contact-info p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-size: 16px;
+    color: #cbd5e1;
 }
 
 .contact-form {
@@ -314,37 +331,47 @@ h2::after {
 }
 
 .contact-form input, .contact-form textarea {
-    padding: 12px;
+    padding: 14px;
     background-color: #0b132b;
     border: 1px solid #3a506b;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 15px;
     outline: none;
     width: 100%;
+    transition: border-color 0.3s;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #ffd166; /* Changes to yellow when typing */
+    border-color: #ffd166;
 }
 
 footer {
     text-align: center;
     padding: 40px 0;
-    background-color: #0a0f1d;
+    background-color: #0b132b;
     color: #64748b;
-    font-size: 14px;
+    font-size: 13px;
     border-top: 1px solid #1c2541;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero-section, .contact-container, .projects-grid {
-        flex-direction: column;
+/* Viewport Responsiveness Adjustments */
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
     }
     .hero-image {
         justify-content: center;
-        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .projects-grid, .contact-container {
+        flex-direction: column;
     }
     .skill-row {
         flex-direction: column;
@@ -352,6 +379,9 @@ footer {
     }
     .progress-bar {
         width: 100%;
-        margin: 10px 0;
+        margin: 12px 0;
+    }
+    .skill-percent {
+        text-align: left;
     }
 }
