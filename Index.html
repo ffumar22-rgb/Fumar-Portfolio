@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Fumar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Frank<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="welcome-tag">Welcome to my portfolio</span>
+            <h1>Hi, I'm Frank Benjamin Fumar</h1>
+            <p class="sub-title">An Aspiring <strong class="highlight">Cybersecurity Specialist</strong></p>
+            <p class="description">A first-year BSIT student focused on secure software logic, data networks, hardware configuration, and system optimization platforms.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Profile.png" alt="Frank Benjamin Fumar" class="profile-avatar">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="card clickable-card">
+            <p>I am currently pursuing a Bachelor of Science in Information Technology (BSIT) at Agusan del Sur State University. My primary career objective is to build expertise as a Cybersecurity Specialist, combining strong computational frameworks with robust security architectures.</p>
+            <p style="margin-top: 15px;">Outside of foundational software engineering, I maintain a deep interest in systems hardware optimization, local network environments, configuration protocols, and building responsive front-end user experiences.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-row">
+                <span class="skill-name">Java Programming (Swing/GUI)</span>
+                <div class="progress-bar"><div class="progress track-a" style="width: 85%;"></div></div>
+                <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-name">Semantic HTML5 / CSS3</span>
+                <div class="progress-bar"><div class="progress track-b" style="width: 80%;"></div></div>
+                <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-name">Hardware & OS Troubleshooting</span>
+                <div class="progress-bar"><div class="progress track-a" style="width: 75%;"></div></div>
+                <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-name">Git & Version Control</span>
+                <div class="progress-bar"><div class="progress track-b" style="width: 70%;"></div></div>
+                <span class="skill-percent">70%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Featured Projects & Milestones</h2>
+        <div class="projects-grid">
+            <div class="project-box">
+                <div>
+                    <h4>Daily Sales Report System</h4>
+                    <p>A desktop GUI application built using Java Swing. Implements clean data calculation logic, modular methods, and user input validation to capture, compute, and report daily transactional records safely.</p>
+                </div>
+                <div class="tag-container">
+                    <span class="tech-tag">Java Standard</span>
+                    <span class="tech-tag">Java Swing</span>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div>
+                    <h4>BIOS/UEFI Configuration Framework</h4>
+                    <p>A technical systems administration exercise mapping secure boot layouts, storage partitioning schemes, process termination via CLI interfaces, and hardware resource profiling protocols.</p>
+                </div>
+                <div class="tag-container">
+                    <span class="tech-tag">System Admin</span>
+                    <span class="tech-tag">CLI / Scripting</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sub-heading">Live Interactive Demo: ASSCAT Announcement Board</h3>
+        <div class="demo-card">
+            <div class="demo-layout">
+                <form id="announcementForm" class="demo-form">
+                    <div class="input-group">
+                        <label for="boardTitle">Announcement Heading</label>
+                        <input type="text" id="boardTitle" placeholder="e.g., BSIT General Assembly" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="boardContent">Notice Details</label>
+                        <textarea id="boardContent" placeholder="Type administrative announcements or campus bulletins here..." rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-bounce">Post to Board</button>
+                </form>
+
+                <div class="board-display">
+                    <h5>Live Campus Board</h5>
+                    <div id="boardContainer" class="board-feed">
+                        <div class="announcement-item">
+                            <h6>Welcome to ASSCAT Portal</h6>
+                            <p>This interactive component showcases responsive frontend engineering and real-time DOM management primitives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Institutional Email:</strong> ffumar22@adssu.edu.ph</p>
+                <p><strong>GitHub Repository:</strong> github.com/ffumar22-rgb</p>
+                <p><strong>Location:</strong> Caraga, Philippines</p>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message simulation sent successfully!');">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea placeholder="Type your message here..." rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary btn-bounce">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Frank Benjamin Fumar | Built with HTML, CSS, and JavaScript Standards</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const announcementForm = document.getElementById('announcementForm');
+            const boardContainer = document.getElementById('boardContainer');
+
+            // JavaScript & DOM Interaction Engine
+            announcementForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const titleInput = document.getElementById('boardTitle');
+                const contentInput = document.getElementById('boardContent');
+
+                // 1. Structural Element Allocation
+                const cardDiv = document.createElement('div');
+                cardDiv.classList.add('announcement-item', 'new-item-pop');
+
+                const heading = document.createElement('h6');
+                heading.textContent = titleInput.value;
+
+                const textParagraph = document.createElement('p');
+                textParagraph.textContent = contentInput.value;
+
+                // 2. DOM Node Tree Assemblage
+                cardDiv.appendChild(heading);
+                cardDiv.appendChild(textParagraph);
+
+                // 3. Prepend Element to Display View
+                boardContainer.prepend(cardDiv);
+
+                // 4. Interface Cleanup
+                announcementForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
